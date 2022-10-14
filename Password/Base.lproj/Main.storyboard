@@ -686,7 +686,7 @@
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="XfG-lQ-9wD" customClass="ViewController" customModule="Password" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="442" height="177"/>
+                        <rect key="frame" x="0.0" y="0.0" width="435" height="177"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RO5-bW-c8a">
@@ -698,32 +698,35 @@
                                 </textFieldCell>
                             </textField>
                             <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4El-kT-12M">
-                                <rect key="frame" x="93" y="51" width="321" height="28"/>
-                                <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="oLO-eB-AQU"/>
+                                <rect key="frame" x="93" y="51" width="314" height="28"/>
+                                <sliderCell key="cell" continuous="YES" state="on" alignment="left" minValue="8" maxValue="24" doubleValue="18" tickMarkPosition="above" sliderType="linear" id="oLO-eB-AQU"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" target="XfG-lQ-9wD" id="eQx-HK-1C7"/>
+                                </connections>
                             </slider>
-                            <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cWn-L8-vc4">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cWn-L8-vc4">
                                 <rect key="frame" x="18" y="19" width="92" height="18"/>
                                 <buttonCell key="cell" type="check" title="Uppercase" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="lR5-kj-qpq">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GVK-x9-3co">
-                                <rect key="frame" x="128" y="19" width="98" height="18"/>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GVK-x9-3co">
+                                <rect key="frame" x="128" y="19" width="91" height="18"/>
                                 <buttonCell key="cell" type="check" title="Lowercase" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="e1a-pX-ABs">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y1B-Xe-Blw">
-                                <rect key="frame" x="244" y="19" width="82" height="18"/>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Y1B-Xe-Blw">
+                                <rect key="frame" x="237" y="19" width="82" height="18"/>
                                 <buttonCell key="cell" type="check" title="Numbers" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Mad-IH-wWe">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0ni-6X-EH1">
-                                <rect key="frame" x="20" y="124" width="260" height="22"/>
+                                <rect key="frame" x="20" y="124" width="253" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" bezelStyle="round" id="kLG-7B-jlH">
                                     <font key="font" metaFont="system" size="14"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -733,15 +736,15 @@
                                     <outlet property="delegate" destination="XfG-lQ-9wD" id="532-tC-ioW"/>
                                 </connections>
                             </textField>
-                            <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OvK-tu-ZRh">
-                                <rect key="frame" x="344" y="19" width="78" height="18"/>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OvK-tu-ZRh">
+                                <rect key="frame" x="337" y="19" width="78" height="18"/>
                                 <buttonCell key="cell" type="check" title="Symbols" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="eTo-5E-ilE">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="C2y-OT-ZNb">
-                                <rect key="frame" x="293" y="118" width="64" height="32"/>
+                                <rect key="frame" x="286" y="118" width="64" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="xl2-av-5az"/>
                                 </constraints>
@@ -754,7 +757,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UBd-tt-Ya6">
-                                <rect key="frame" x="355" y="118" width="74" height="32"/>
+                                <rect key="frame" x="348" y="118" width="74" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="DNN-2L-hhj"/>
                                 </constraints>
@@ -806,9 +809,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="passwordLenghtSlider" destination="4El-kT-12M" id="zh2-dL-rg5"/>
+                        <outlet property="lowercase" destination="GVK-x9-3co" id="7WN-W5-Ukb"/>
+                        <outlet property="numbers" destination="Y1B-Xe-Blw" id="Xif-aQ-hxt"/>
                         <outlet property="passwordLenghtTextField" destination="M4f-fQ-fTG" id="24m-1C-D13"/>
                         <outlet property="passwordTextField" destination="0ni-6X-EH1" id="kLc-rS-IZ1"/>
+                        <outlet property="symbols" destination="OvK-tu-ZRh" id="sUo-4a-Y9u"/>
+                        <outlet property="uppercase" destination="cWn-L8-vc4" id="ZwI-Oa-77a"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

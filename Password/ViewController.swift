@@ -7,16 +7,22 @@
 
 import Cocoa
 
-class ViewController: NSViewController, NSTextFieldDelegate {
+class ViewController: NSViewController {
 
     @IBOutlet weak var passwordTextField: NSTextField!
     @IBOutlet weak var passwordLenghtTextField: NSTextField!
-    @IBOutlet weak var passwordLenghtSlider: NSSlider!
+    
+    @IBOutlet weak var uppercase: NSButton!
+    @IBOutlet weak var lowercase: NSButton!
+    @IBOutlet weak var numbers: NSButton!
+    @IBOutlet weak var symbols: NSButton!
+    
+    let generator = PasswordGenerator()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        passwordTextField.stringValue = PasswordGenerator.getPassword(lenght: 18, uppercase: true, lowercase: true, numbers: true, symbols: true)
+        passwordTextField.stringValue = generator.getPassword(lenght: 18, uppercase: uppercase.isOn, lowercase: lowercase.isOn, numbers: numbers.isOn, symbols: symbols.isOn)
         passwordLenghtTextField.stringValue = "18"
     }
 
@@ -31,11 +37,12 @@ class ViewController: NSViewController, NSTextFieldDelegate {
     }
     
     @IBAction func refreshPassword(_ sender: Any) {
-        passwordTextField.stringValue = PasswordGenerator.getPassword(lenght: 18, uppercase: true, lowercase: true, numbers: true, symbols: true)
+        passwordTextField.stringValue = generator.getPassword(lenght: 18, uppercase: uppercase.isOn, lowercase: lowercase.isOn, numbers: numbers.isOn, symbols: symbols.isOn)
     }
     
-    func controlTextDidChange(_ obj: Notification) {
-        
+    @IBAction func sliderValueChanged(_ sender: NSSlider) {
+        passwordLenghtTextField.stringValue = String(sender.intValue)
     }
+    
 }
 

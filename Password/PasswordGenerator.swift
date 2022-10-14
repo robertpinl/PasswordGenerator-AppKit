@@ -8,7 +8,7 @@
 import Foundation
 
 struct PasswordGenerator {
-    static func getPassword(lenght: Int, uppercase: Bool, lowercase: Bool, numbers: Bool, symbols: Bool) -> String {
+    func getPassword(lenght: Int, uppercase: Bool, lowercase: Bool, numbers: Bool, symbols: Bool) -> String {
         var password: [Character] = []
         
         if uppercase {
