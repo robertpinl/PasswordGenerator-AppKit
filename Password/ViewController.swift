@@ -33,7 +33,9 @@ class ViewController: NSViewController {
     }
 
     @IBAction func copyToPasteboard(_ sender: NSButton) {
-        
+        let pasteboard = NSPasteboard.general
+        pasteboard.clearContents()
+        pasteboard.setString(passwordTextField.stringValue, forType: .string)
     }
     
     @IBAction func refreshPassword(_ sender: Any) {
