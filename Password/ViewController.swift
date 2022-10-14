@@ -7,12 +7,17 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
+class ViewController: NSViewController, NSTextFieldDelegate {
 
+    @IBOutlet weak var passwordTextField: NSTextField!
+    @IBOutlet weak var passwordLenghtTextField: NSTextField!
+    @IBOutlet weak var passwordLenghtSlider: NSSlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        passwordLenghtTextField.stringValue = "18"
     }
 
     override var representedObject: Any? {
@@ -21,6 +26,16 @@ class ViewController: NSViewController {
         }
     }
 
-
+    @IBAction func copyToPasteboard(_ sender: NSButton) {
+        
+    }
+    
+    @IBAction func refreshPassword(_ sender: Any) {
+        
+    }
+    
+    func controlTextDidChange(_ obj: Notification) {
+        
+    }
 }
 
