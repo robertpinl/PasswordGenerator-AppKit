@@ -701,21 +701,21 @@
                                 <rect key="frame" x="93" y="51" width="321" height="28"/>
                                 <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="oLO-eB-AQU"/>
                             </slider>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cWn-L8-vc4">
+                            <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cWn-L8-vc4">
                                 <rect key="frame" x="18" y="19" width="92" height="18"/>
                                 <buttonCell key="cell" type="check" title="Uppercase" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="lR5-kj-qpq">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GVK-x9-3co">
+                            <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GVK-x9-3co">
                                 <rect key="frame" x="128" y="19" width="98" height="18"/>
-                                <buttonCell key="cell" type="check" title="Lowercasse" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="e1a-pX-ABs">
+                                <buttonCell key="cell" type="check" title="Lowercase" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="e1a-pX-ABs">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Y1B-Xe-Blw">
+                            <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y1B-Xe-Blw">
                                 <rect key="frame" x="244" y="19" width="82" height="18"/>
                                 <buttonCell key="cell" type="check" title="Numbers" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Mad-IH-wWe">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -724,8 +724,8 @@
                             </button>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0ni-6X-EH1">
                                 <rect key="frame" x="20" y="124" width="260" height="22"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" bezelStyle="round" id="kLG-7B-jlH">
-                                    <font key="font" metaFont="system"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" bezelStyle="round" id="kLG-7B-jlH">
+                                    <font key="font" metaFont="system" size="14"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -733,7 +733,7 @@
                                     <outlet property="delegate" destination="XfG-lQ-9wD" id="532-tC-ioW"/>
                                 </connections>
                             </textField>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OvK-tu-ZRh">
+                            <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OvK-tu-ZRh">
                                 <rect key="frame" x="344" y="19" width="78" height="18"/>
                                 <buttonCell key="cell" type="check" title="Symbols" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="eTo-5E-ilE">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -771,8 +771,8 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="55" id="DV0-dx-W9J"/>
                                 </constraints>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" bezelStyle="round" id="uKX-32-M9b">
-                                    <font key="font" metaFont="system"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" bezelStyle="round" id="uKX-32-M9b">
+                                    <font key="font" metaFont="system" size="14"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>

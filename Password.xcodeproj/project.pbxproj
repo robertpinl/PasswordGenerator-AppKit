@@ -11,6 +11,8 @@
 		229E3F2B28F5511D0018F173 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E3F2A28F5511D0018F173 /* ViewController.swift */; };
 		229E3F2D28F5511E0018F173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229E3F2C28F5511E0018F173 /* Assets.xcassets */; };
 		229E3F3028F5511E0018F173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229E3F2E28F5511E0018F173 /* Main.storyboard */; };
+		229E3F3A28F937B80018F173 /* CharactersGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E3F3928F937B80018F173 /* CharactersGroup.swift */; };
+		229E3F3C28F93AA90018F173 /* PasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E3F3B28F93AA90018F173 /* PasswordGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		229E3F2C28F5511E0018F173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		229E3F2F28F5511E0018F173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		229E3F3128F5511E0018F173 /* Password.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Password.entitlements; sourceTree = "<group>"; };
+		229E3F3928F937B80018F173 /* CharactersGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersGroup.swift; sourceTree = "<group>"; };
+		229E3F3B28F93AA90018F173 /* PasswordGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				229E3F2828F5511D0018F173 /* AppDelegate.swift */,
 				229E3F2A28F5511D0018F173 /* ViewController.swift */,
+				229E3F3B28F93AA90018F173 /* PasswordGenerator.swift */,
+				229E3F3928F937B80018F173 /* CharactersGroup.swift */,
 				229E3F2C28F5511E0018F173 /* Assets.xcassets */,
 				229E3F2E28F5511E0018F173 /* Main.storyboard */,
 				229E3F3128F5511E0018F173 /* Password.entitlements */,
@@ -131,6 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				229E3F3C28F93AA90018F173 /* PasswordGenerator.swift in Sources */,
+				229E3F3A28F937B80018F173 /* CharactersGroup.swift in Sources */,
 				229E3F2B28F5511D0018F173 /* ViewController.swift in Sources */,
 				229E3F2928F5511D0018F173 /* AppDelegate.swift in Sources */,
 			);

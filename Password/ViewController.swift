@@ -16,7 +16,7 @@ class ViewController: NSViewController, NSTextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        passwordTextField.stringValue = PasswordGenerator.getPassword(lenght: 18, uppercase: true, lowercase: true, numbers: true, symbols: true)
         passwordLenghtTextField.stringValue = "18"
     }
 
@@ -31,7 +31,7 @@ class ViewController: NSViewController, NSTextFieldDelegate {
     }
     
     @IBAction func refreshPassword(_ sender: Any) {
-        
+        passwordTextField.stringValue = PasswordGenerator.getPassword(lenght: 18, uppercase: true, lowercase: true, numbers: true, symbols: true)
     }
     
     func controlTextDidChange(_ obj: Notification) {
