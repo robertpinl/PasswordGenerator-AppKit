@@ -13,7 +13,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        statusItem.button?.title = "#️⃣"
+        statusItem.button?.image = NSImage(named: "icon")
         statusItem.button?.target = self
         statusItem.button?.action = #selector(showSettings)
     }

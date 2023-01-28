@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21225"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -811,6 +811,7 @@
                     <connections>
                         <outlet property="lowercase" destination="GVK-x9-3co" id="7WN-W5-Ukb"/>
                         <outlet property="numbers" destination="Y1B-Xe-Blw" id="Xif-aQ-hxt"/>
+                        <outlet property="passwordLenghtSlider" destination="4El-kT-12M" id="fHM-yM-3Gg"/>
                         <outlet property="passwordLenghtTextField" destination="M4f-fQ-fTG" id="24m-1C-D13"/>
                         <outlet property="passwordTextField" destination="0ni-6X-EH1" id="kLc-rS-IZ1"/>
                         <outlet property="symbols" destination="OvK-tu-ZRh" id="sUo-4a-Y9u"/>

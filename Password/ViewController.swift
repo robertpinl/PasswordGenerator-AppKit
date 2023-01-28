@@ -11,6 +11,7 @@ class ViewController: NSViewController {
 
     @IBOutlet weak var passwordTextField: NSTextField!
     @IBOutlet weak var passwordLenghtTextField: NSTextField!
+    @IBOutlet weak var passwordLenghtSlider: NSSlider!
     
     @IBOutlet weak var uppercase: NSButton!
     @IBOutlet weak var lowercase: NSButton!
@@ -22,8 +23,8 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        passwordTextField.stringValue = generator.getPassword(lenght: 18, uppercase: uppercase.isOn, lowercase: lowercase.isOn, numbers: numbers.isOn, symbols: symbols.isOn)
-        passwordLenghtTextField.stringValue = "18"
+        generate()
+        passwordLenghtTextField.stringValue = String(passwordLenghtSlider.intValue)
     }
 
     override var representedObject: Any? {
@@ -39,11 +40,16 @@ class ViewController: NSViewController {
     }
     
     @IBAction func refreshPassword(_ sender: Any) {
-        passwordTextField.stringValue = generator.getPassword(lenght: 18, uppercase: uppercase.isOn, lowercase: lowercase.isOn, numbers: numbers.isOn, symbols: symbols.isOn)
+        generate()
     }
     
     @IBAction func sliderValueChanged(_ sender: NSSlider) {
         passwordLenghtTextField.stringValue = String(sender.intValue)
+        generate()
+    }
+    
+    private func generate() {
+        passwordTextField.stringValue = generator.getPassword(lenght: Int(passwordLenghtSlider.intValue), uppercase: uppercase.isOn, lowercase: lowercase.isOn, numbers: numbers.isOn, symbols: symbols.isOn)
     }
     
 }
