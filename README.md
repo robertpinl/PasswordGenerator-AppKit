@@ -5,4 +5,4 @@ A macOS password generator is a AppKit app that can generate random, secure pass
 <img src="https://github.com/robertpinl/PasswordGenerator-AppKit/blob/main/ReadmeAssets/PasswordGenerator.png" height="220" />
 
 ## License
-Unit Converter is available under the MIT license. See the LICENSE file for more info.
+Password Generator is available under the MIT license. See the LICENSE file for more info.
